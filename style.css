@@ -1,3 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    height: 100vh;
     background-color: #404040;
+}
+
+.calc {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.displaybox {
+    background-color: white;
+    border: 2px solid yellow;
+    height: 150px;
+    width: 411px;
+     
+}
+
+.buttons > button {
+    flex: 1 0 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#equals {
+    width: 204px;
 }
