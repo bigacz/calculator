@@ -2,13 +2,10 @@ const displayText = document.getElementById(`display`);
 const buttons = document.querySelectorAll(`.buttons > button`)
 buttons.forEach(button => 
     button.addEventListener('click', buttonPressed))
-let num1 = 0;
-let num2 = 0;
-let op = '+';
 
 function buttonPressed(button) {
     value = button.currentTarget.textContent;
-    let equation = display.value().split(' ');
+    let equation = display.value().trimEnd().split(' ');
     switch(value) {
         case `=`:
             display.change(operate(equation));
@@ -24,7 +21,11 @@ function buttonPressed(button) {
             break;
         default:
             if(checkNumber(value)) {
-                display.add(value)
+                if(value === '0' && equation[equation.length - 1] == '/') {
+                    alert("You can't divide by 0!")
+                } else {
+                    display.add(value)
+                }
             } else if(checkNumber(display.lastChar()) && value != `.`) {
                 display.add(` ${value} `)
             } else if(!hasChar(equation[equation.length - 1])){
