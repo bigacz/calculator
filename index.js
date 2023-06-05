@@ -44,7 +44,7 @@ function buttonPressed(value) {
     switch(value) {
         case `=`:
             if(isNumber(display.lastChar()))
-            display.change(operate(equation));
+            display.change(Math.round(operate(equation)* 10000) / 10000);
             break;
         case `AC`:
             display.change('');

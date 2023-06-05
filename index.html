@@ -4,44 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     <script src="index.js" defer></script>
 </head>
 <body>
     <div class="calc">
-        <div class="displaybox">
-            <p id="display"></p>
+        <div class="calcBody">
+            <div class="displaybox">
+                <span id="display"></span>
+            </div>
+            <div class="buttons">
+                <button data-key="Escape" id="ac">AC</button>
+                <button data-key="Backspace">C</button>
+                <button data-key="%">%</button>
+                <button data-key="/">/</button>
+            </div>
+            <div class="buttons">
+                <button data-key="7">7</button>
+                <button data-key="8">8</button>
+                <button data-key="9">9</button>
+                <button data-key="*">*</button>
+            </div>
+            <div class="buttons">
+                <button data-key="4">4</button>
+                <button data-key="5">5</button>
+                <button data-key="6">6</button>
+                <button data-key="-">-</button>
+            </div>
+            <div class="buttons">
+                <button data-key="1">1</button>
+                <button data-key="2">2</button>
+                <button data-key="3">3</button>
+                <button data-key="+">+</button>
+            </div>
+            <div class="buttons">
+                <button data-key="0">0</button>
+                <button data-key=".">.</button>
+                <button data-key="Enter" id="equals">=</button>
+            </div>
         </div>
-        <div class="buttons">
-            <button data-key="Escape">AC</button>
-            <button data-key="Backspace">C</button>
-            <button data-key="%">%</button>
-            <button data-key="/">/</button>
-        </div>
-        <div class="buttons">
-            <button data-key="7">7</button>
-            <button data-key="8">8</button>
-            <button data-key="9">9</button>
-            <button data-key="*">*</button>
-        </div>
-        <div class="buttons">
-            <button data-key="4">4</button>
-            <button data-key="5">5</button>
-            <button data-key="6">6</button>
-            <button data-key="-">-</button>
-        </div>
-        <div class="buttons">
-            <button data-key="1">1</button>
-            <button data-key="2">2</button>
-            <button data-key="3">3</button>
-            <button data-key="+">+</button>
-        </div>
-        <div class="buttons">
-            <button data-key="0">0</button>
-            <button data-key=".">.</button>
-            <button data-key="Enter" id="equals">=</button>
-        </div>
-    </div>   
+    </div>
+    <footer>
+        <p>beegee</p>
+        <a href="https://github.com/bigacz">
+            <img src="assets/github.svg">
+        </a>
 </body>
 </html>
