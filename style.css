@@ -14,7 +14,7 @@ body {
 }
 
 .calc {
-    flex: 20;
+    flex: 1;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -75,7 +75,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 5px;
-    flex: 1;
+    flex: 0 1 40px;
     gap: 20px;
     font-size: 25px;
     font-family: Tahoma, sans-serif;
