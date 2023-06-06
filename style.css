@@ -41,10 +41,7 @@ body {
     padding: 20px;
     font-size: 30px; 
     font-family: 'Orbitron';
-}
-
-.display {
-    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .buttons > button {
@@ -55,6 +52,7 @@ body {
     font-size: 40px;
     border-radius: 5px;
     font-family: 'Orbitron';
+    border: 1px #202020 solid;
 }
 
 .buttonClicked {
@@ -76,8 +74,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
     flex: 1;
     gap: 20px;
     font-size: 25px;
     font-family: Tahoma, sans-serif;
+}
+
+.githubHover {
+    transform: scale(1.1);
 }

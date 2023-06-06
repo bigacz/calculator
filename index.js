@@ -5,6 +5,7 @@ buttons.forEach(button => {
     button.addEventListener('click', e => {
         buttonPressed(e.currentTarget.textContent);
         e.currentTarget.classList.add(`buttonClicked`);
+        audio.currentTime = 0;
         audio.play();
     })
     button.addEventListener('transitionend', e => {
@@ -12,6 +13,14 @@ buttons.forEach(button => {
     })
 })
 
+const githubIcon = document.getElementById(`githubIcon`)
+githubIcon.addEventListener(`mouseover`, e => {
+    e.currentTarget.classList.add(`githubHover`);
+})
+
+githubIcon.addEventListener(`mouseleave`, e => {
+    e.currentTarget.classList.remove(`githubHover`);
+})
 
 window.addEventListener('keydown', e => {
     const button = document.querySelector(`button[data-key="${e.key}"]`)
