@@ -1,7 +1,17 @@
 const displayText = document.getElementById(`display`);
+const sound = document.getElementById(`audio`);
 const buttons = document.querySelectorAll(`.buttons > button`)
-buttons.forEach(button => 
-    button.addEventListener('click', e => buttonPressed(e.currentTarget.textContent)))
+buttons.forEach(button => {
+    button.addEventListener('click', e => {
+        buttonPressed(e.currentTarget.textContent);
+        e.currentTarget.classList.add(`buttonClicked`);
+        audio.play();
+    })
+    button.addEventListener('transitionend', e => {
+        e.currentTarget.classList.remove(`buttonClicked`);
+    })
+})
+
 
 window.addEventListener('keydown', e => {
     const button = document.querySelector(`button[data-key="${e.key}"]`)

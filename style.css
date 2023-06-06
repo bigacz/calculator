@@ -57,9 +57,10 @@ body {
     font-family: 'Orbitron';
 }
 
-.buttons > button:hover {
-    background-color: #505050;
-    transition: 0.3s;
+.buttonClicked {
+    transform: scale(1.050);
+    transition: all 0.1s;
+    border-color:#404040;
 }
 
 #equals {
@@ -68,10 +69,6 @@ body {
 
 #ac {
     background-color: #505050;
-}
-
-#ac:hover{
-    background-color: #404040;
 }
 
 footer {
