@@ -61,6 +61,10 @@ body {
     border-color:#404040;
 }
 
+.buttons::selection, .buttons button::selection{
+    text-shadow: none;
+}
+
 #equals {
     width: 204px;
 }
