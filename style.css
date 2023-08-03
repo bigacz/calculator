@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -87,4 +89,15 @@ footer {
 
 .githubHover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    #equals {
+        width: 164px;
+    }
+    
+    .buttons > button {
+        width: 80px;
+        height: 80px;
+    }
 }
